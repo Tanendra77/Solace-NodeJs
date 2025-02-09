@@ -22,7 +22,7 @@ A real-time messaging application demonstrating Solace PubSub+ capabilities with
 ---
 
 ## Project Structure
-```bash
+
 solace/
 ├── Solace Pubsub-Nodejs/ # Backend (Node.js)
 │   ├── app.js            # Express server
