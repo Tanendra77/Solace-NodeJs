@@ -35,4 +35,3 @@ solace/
     └── src/
         └── components/
             └── Messages.js # Message display component
-└── package.json
