@@ -24,14 +24,14 @@ A real-time messaging application demonstrating Solace PubSub+ capabilities with
 ## Project Structure
 ```bash
 solace/
-├── Solace Pubsub-Nodejs/ # Backend 1(Node.js) for sender
+├── Solace Pubsub-Nodejs/ # Backend 1 (Node.js) for sender
 │   ├── app.js             # Express server
 │   ├── TopicPublisher.js  # Topic message sender
 │   ├── QueueProducer.js   # Queue message sender
 │   ├── TopicSubscriber.js # Terminal test Code for receiving via topic
 │   ├── QueueConsumer.js   # Terminal test Code for receiving via topic
 │   └── .env               # Environment configuration
-├── Solace Consumer-Subscriber/ # Backend (Node.js) for receiver
+├── Solace Consumer-Subscriber/ # Backend 2 (Node.js) for receiver
 │   ├── app.js             # Express server (with MongoDB connection)
 │   ├── TopicSubscriber.js # Topic message receiver
 │   ├── QueueConsumer.js   # Queue message receiver
