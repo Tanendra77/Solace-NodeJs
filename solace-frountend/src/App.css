@@ -1,0 +1,301 @@
+/* Global Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #243642; /* Dark background */
+  color: #E2F1E7; /* Light text */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main Container */
+.container {
+  background-color: #387478; /* Primary color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+/* Title Styling */
+.Title {
+  text-align: center; /* Center the text */
+  position: fixed; /* Fix at the top */
+  top: 0; /* Stick to the top */
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
+  width: 100%;
+  background-color: #387478; /* Match theme */
+  color: #E2F1E7; /* Light text */
+  padding: 15px 0;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 1000; /* Ensure it stays above content */
+}
+
+/* Navigation Bar */
+nav {
+  background: #387478;
+  padding: 1px;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #00FF9C;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Forms */
+.containerbox {
+  background: #387478;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  margin: 20px auto;
+}
+
+h2 {
+  color: #E2F1E7;
+  text-align: center;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #E2F1E7;
+}
+
+/* Input Fields */
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #629584; /* Secondary accent */
+  border-radius: 4px;
+  background-color: #E2F1E7;
+  color: #243642;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #629584;
+  color: #E2F1E7;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #009990;
+}
+
+/* Response Message */
+#response {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #E2F1E7;
+}
+
+/* Queue Consumer Styles */
+.queue-consumer {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #629584;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.queue-consumer h2 {
+  color: #E2F1E7;
+}
+
+.queue-consumer input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #E2F1E7;
+  border-radius: 4px;
+  background-color: #E2F1E7;
+  color: #243642;
+}
+
+.queue-consumer button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #387478;
+  color: #E2F1E7;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.queue-consumer button:hover {
+  background-color: #243642;
+}
+
+.queue-consumer p {
+  text-align: center;
+  color: #E2F1E7;
+}
+
+.message-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background: #E2F1E7;
+  color: #243642;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+/* Message Container */
+.message-box {
+  background: #E2F1E7; /* Light background for contrast */
+  color: #243642; /* Dark text for readability */
+  padding: 1px;
+  border-radius: 6px;
+  margin: 5px 0;
+  border-left: 5px solid #387478; /* Adds a highlight */
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Message Payload */
+.message-payload {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #243642;
+}
+
+/* Message Timestamp */
+.message-timestamp {
+  font-size: 12px;
+  color: #555;
+  font-style: italic;
+}
+
+/* Scrollable message container */
+.messages-container {
+  max-height: 500px; /* Adjust as needed */
+  overflow-y: auto;
+  padding: 10px;
+  border-radius: 6px;
+  background: #E2F1E7;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Improve message readability */
+.message-box {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-left: 5px solid #387478;
+  background: #f4f4f4;
+  color: #243642;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #ff4d4d; /* Red color */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 5px;
+  /* display: flex; */
+  width:20%;
+  justify-content: center;
+  align-self: center;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+
+/* Company Logo in Bottom Right */
+.company-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+}
+
+.tech-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Built with Section */
+.built-with {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tech-logo {
+  width: 40px; /* Adjust size as needed */
+  height: auto;
+  margin: 0 5px;
+}
+.plus-sign {
+  font-size: 24px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.solace-logo {
+  width: 70px; /* Adjust as needed */
+}
+
+.trash{
+  width: 15px
+}
+
+.trash{
+  width: 15px
+}
+
+
+
+
