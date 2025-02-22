@@ -1,4 +1,4 @@
-# Solace PubSub+ Real-Time Messaging Demo
+# Solace PubSub+ Real-Time Messaging
 
 [![Node.js Version](https://img.shields.io/badge/Node.js-16%2B-green)](https://nodejs.org/)
 [![React Version](https://img.shields.io/badge/React-18%2B-blue)](https://reactjs.org/)
