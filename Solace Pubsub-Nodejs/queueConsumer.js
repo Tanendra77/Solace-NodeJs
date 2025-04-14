@@ -80,10 +80,10 @@ function runConsumer(queue) {
   };
 
   consumer.run(
-    "wss://mr-connection-okms9u4jc2o.messaging.solace.cloud:443",
-    "messaging",
+    "wss://mr-connection-vbx6wbdxa41.messaging.solace.cloud:443",
+    "server3-mumbai",
     "solace-cloud-client",
-    "r5b2e07qrmp5atd58p8uan8kkk"
+    "ta8kfrtgke602k998m37m895vt"
   );
 
   process.stdin.resume();

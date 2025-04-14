@@ -4,6 +4,7 @@ import TopicPage from './pages/topic';
 import QueuePage from './pages/QueuePage';
 import QueueMessage from './pages/QueueMessage';
 import MongoMessages from './pages/mongoMessage';
+import TopicSubscriber from './pages/TopicSubscriber';
 import './App.css';
 //logos
 import companyLogo from './assets/company-logo.png'; 
@@ -23,6 +24,7 @@ function App() {
             <li><Link to="/queue">Queue</Link></li>
             <li><Link to="/queuemessage">QueueMessage</Link></li>
             <li><Link to="/mongomessages">MongoMessage</Link></li>
+            <li><Link to="/topicsubscriber">TopicSubscriber</Link></li>
           </ul>
         </nav>
 
@@ -31,6 +33,7 @@ function App() {
           <Route path="/queue" element={<QueuePage />} />
           <Route path="/queuemessage" element={<QueueMessage />} />
           <Route path="/mongomessages" element={<MongoMessages />} />
+          <Route path="/topicsubscriber" element={<TopicSubscriber />} />
         </Routes>
       </div>
 

@@ -41,11 +41,12 @@ app.post('/queue', async (req, res) => {
       const response = await runProducer(
         queue,
         message,
-        "wss://mr-connection-okms9u4jc2o.messaging.solace.cloud:443",
-        "messaging",
+        "wss://mr-connection-vbx6wbdxa41.messaging.solace.cloud:443",
+        "server3-mumbai",
         "solace-cloud-client",
-        "r5b2e07qrmp5atd58p8uan8kkk"
+        "ta8kfrtgke602k998m37m895vt"
       );
+      
       res.json({ success: true, message: response });
     } catch (error) {
       res.status(500).json({ success: false, error });

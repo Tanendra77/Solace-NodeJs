@@ -7,10 +7,10 @@ factoryProps.profile = solace.SolclientFactoryProfiles.version10;
 solace.SolclientFactory.init(factoryProps);
 
 const sessionProperties = {
-  url: process.env.SOLACE_URL || "wss://mr-connection-okms9u4jc2o.messaging.solace.cloud:443",  
-  vpnName: process.env.SOLACE_VPN || "messaging",  
+  url: process.env.SOLACE_URL || "wss://mr-connection-vbx6wbdxa41.messaging.solace.cloud:443",  
+  vpnName: process.env.SOLACE_VPN || "server3-mumbai",  
   userName: process.env.SOLACE_USERNAME || "solace-cloud-client",  
-  password: process.env.SOLACE_PASSWORD || "r5b2e07qrmp5atd58p8uan8kkk"
+  password: process.env.SOLACE_PASSWORD || "ta8kfrtgke602k998m37m895vt"
 };
 
 console.log("Session Properties:", sessionProperties);
